@@ -1,7 +1,7 @@
 import { getAllBlog } from "@/components/blog/actions/blog-action";
 import { Card, CardBody, CardHeader } from "@heroui/card";
 import Image from "next/image";
-
+import { AuthProvider } from './../components/auth/components/AuthProvider';
 export default async function Home() {
   const blogs = await getAllBlog();
   return (
@@ -27,7 +27,7 @@ export default async function Home() {
         </div>
       </div>
 
-      
     </section>
   );
 }
+
