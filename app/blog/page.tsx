@@ -4,12 +4,10 @@ import InputImage from "@/components/blog/components/InputImage";
 import TableBlogs from "@/components/blog/components/TableBlogs";
 import { title } from "@/components/primitives";
 
-
 export default async function BlogPage() {
-
   const blogs = await getAllBlog();
 
-  console.log(blogs)
+  console.log(blogs);
   return (
     <div>
       <TableBlogs blogs={blogs} />
