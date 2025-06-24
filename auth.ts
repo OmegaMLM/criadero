@@ -15,8 +15,7 @@ const getUserFromDb = async (email: string, password: string) => {
 
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
-    adapter: PrismaAdapter(prisma),
-    providers: [
+        adapter: PrismaAdapter(prisma as any),    providers: [
         CredentialsProvider({
             credentials: {
                 email: {},
