@@ -1,5 +1,5 @@
 'use client';
-
+  
 import LoginForm from './../../components/auth/components/LoginForm';
 import { AuthProvider } from './../../components/auth/components/AuthProvider';
 
