@@ -1,7 +1,7 @@
 import { getAllBlog } from "@/components/blog/actions/blog-action";
 import { Card, CardBody, CardHeader } from "@heroui/card";
 import Image from "next/image";
-import { auth } from "@/auth";
+import { auth } from "@/lib/auth";
 export default async function Home() {
   const blogs = await getAllBlog();
   const session = await auth();
